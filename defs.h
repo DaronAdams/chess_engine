@@ -28,6 +28,8 @@ const U64 FILE_C = 0x404040404040404ull;
 const U64 FILE_B = 0x202020202020202ull;
 const U64 FILE_A = 0x101010101010101ull;
 
+const U64 EMPTY = 0;
+
 // Colors
 enum Color {
     BLACK,
