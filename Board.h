@@ -35,6 +35,7 @@ public:
     */
     void setFen(std::string);
 
+    std::string printBoard() const;
 
     /*
      * Sets board to the standard starting position
@@ -84,9 +85,20 @@ private:
     int _moveClock;
 
     /*
+    * - Bit 0 - White kingside
+    * - Bit 1 - White queenside
+    * - Bit 2 - Black kingside
+    * - Bit 3 - Black queenside
+     */
+    unsigned char _castlingRights;
+
+
+    /*
      * Clears all bitboards
      */
     void _clearBitBoards();
+
+    Color getActivePlayer() const;
 };
 
 

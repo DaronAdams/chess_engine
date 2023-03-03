@@ -28,8 +28,15 @@ const U64 FILE_C = 0x404040404040404ull;
 const U64 FILE_B = 0x202020202020202ull;
 const U64 FILE_A = 0x101010101010101ull;
 
+/*
+ * An empty bitboard with all values set to 0
+ */
 const U64 EMPTY = 0;
 
+/*
+ *A bitboard containing only the square a1. (ie. the number 1)
+ */
+const U64 ONE = U64(1);
 // Colors
 enum Color {
     BLACK,
